@@ -1,0 +1,40 @@
+/* container */
+.container {width: 1000px; margin: 0 auto;}
+
+/* row */
+.row {position: relative; margin: 0 20px;}
+
+/* header */
+#header {}
+
+#header .header-data {
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 30px;/*inline 구조이기 때문에 block으로 해주면 padding 값이 먹는다!*/
+    display: block;
+    color:#A8A8A8;
+}
+#header .header-title {
+    font-weight: bold;
+    font-size: 32px;
+}
+#header .header-id {
+    position: absolute; right: 0; bottom: 5px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #A4A9B5 0%, rgba(255, 255, 255, 0) 100%), #A4A9B5;
+    border-radius: 50%;
+    font-weight: 300;
+    font-size: 18px;
+    color :#fff;
+    display: flex;/*모바일에서 가운데 정렬할 때 grid나 flex 많이 씀.*/
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    /*text-align: center; line-height: 40px;값을 동일하게 40으로 해주면 높이도 중간에 오게 할 수 있음.*/
+}
+
+/* mediaquery */
+@media (max-width: 1020px) {/*오차가 생길 수 있으니 1020으로 작업*/
+    .container {width: 100%;}
+}
